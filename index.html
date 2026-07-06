@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Formatter</title>
+<link rel="stylesheet" href="style.css">
+<head>
+</head>
+<body>
+
+<div class="container">
+<h1>WhatsApp</h1>
+<p>Text Editor</p>
+<div class="toolbar">
+<button onclick="insertTag('bold')"><b>BOLD</b></button>
+<button onclick="insertTag('italic')"><i>ITALIC</i></button>
+<button onclick="insertTag('stric')"><s>STRIKE</s></button>
+<button onclick="insertTag('bullet')">BULLET</button>
+<button onclick="insertTag('number')">NUMBER</button>
+</div>
+<textarea id="msg" placeholder="Type your message..." onkeyup="previewText()"></textarea>
+
+<div class="preview">
+<h3>Preview</h3>
+<div id="preview"></div>
+</div>
+<button class="send" onclick="shareText()">
+ Share
+</button><button 
+  style="width:200px; height:60px; background:#25D366; border:none; margin:50px; border-radius:10px; font-size:20px;">
+    <a href="./dark.html" style="text-decoration:none; color:#fff;">Dark Mode</a>
+    </button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
